@@ -119,8 +119,7 @@ body {
     }
 }
 .offcanvas-aside-open {
-    right: 0;
-    
+    right: 0; 
 }
 
 #mainNav {
@@ -134,7 +133,7 @@ body {
     text-transform: uppercase;
     color: white;
     border: 0;
-    background-color: #fed136;
+    background-color: #d6a2e4;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }

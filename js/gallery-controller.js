@@ -1,6 +1,5 @@
-// setup listner for img
-
-
+'use strict'
+$(document).ready(initPage)
 
 function initPage() {
   renderGallery()
@@ -8,7 +7,6 @@ function initPage() {
 
 function renderGallery() {
   const projects = getProjects()
-
   //render projects
   var strHtmls = projects.map(project => `
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -60,8 +58,6 @@ function onShowModal() {
   $('.modal-body').html(strHtmls)
 }
 
-
-
 function onSubmitForm(ev) {
   ev.preventDefault()
   var $name = $('.form-container #inputFullname').val()
@@ -70,12 +66,11 @@ function onSubmitForm(ev) {
   var $message = $('.form-container  #inputMessage').val()
   // regex to validate email
   var emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
-  console.log( $name, $email, $subject, $message)
-  if (!$name || !$email || !$subject || !$message ) {
+  console.log($name, $email, $subject, $message)
+  if (!$name || !$email || !$subject || !$message) {
     alert('Please fill all the fields')
     return
   }
-
   if (!emailRegex.test($email)) {
     alert('Please enter a valid email address')
     return
@@ -90,8 +85,7 @@ function onSubmitForm(ev) {
 }
 
 function parseDate(timestamp) {
-  var date = new Date(timestamp)
+  const date = new Date(timestamp)
   // Return format Mon Year
   return `${date.toLocaleString('en-us', { month: 'short' })} ${date.getFullYear()}`
-  
 }

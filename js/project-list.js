@@ -10,6 +10,17 @@ var gProjects = [
         publishedAt: 1668970709000,
         labels: ['Matrixes', 'CSS', 'Recursion']
     },
+
+    {
+        id: "guess-me",
+        name: 'Guess Me',
+        title: 'Guess Me Website',
+        desc: 'A game of a ginnie guessing who you think of and learning from you',
+        url: 'https://ireneduchovny.github.io/guess-who-game/',
+        publishedAt: 1670266709000,
+        labels: ['MVC', 'Storage Services', 'JSON trees', 'CRUDL']
+    },
+    
     {
         id: "pacman",
         name: 'Pacman',
@@ -60,14 +71,6 @@ var gProjects = [
         labels: ['Matrixes', 'keyboard events']
     },
 
-    {
-        id: "guess-me",
-        name: 'Guess Me',
-        title: 'Guess Me Website',
-        desc: 'A game of a ginnie guessing who you think of and learning from you',
-        url: 'https://ireneduchovny.github.io/guess-who-game/',
-        publishedAt: 1670266709000,
-        labels: ['MVC', 'Storage Services', 'JSON trees', 'CRUDL']
-    },
+   
 ]
 
