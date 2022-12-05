@@ -4,70 +4,70 @@ var gProjects = [
     {
         id: "minesweeper",
         name: 'Minesweeper',
-        title: 'Minesweeper',
+        title: 'Minesweeper Game',
         desc: 'A classic game of minesweeper',
         url: 'https://ireneduchovny.github.io/Mine-Sweeper/',
-        publishedAt: 1448693940000,
-        labels: ['Matrixes', 'keyboard events']
+        publishedAt: 1668970709000,
+        labels: ['Matrixes', 'CSS', 'Recursion']
     },
     {
         id: "pacman",
         name: 'Pacman',
-        title: 'Pacman',
+        title: 'Pacman Game',
         desc: 'A classic game of pacman',
-        url: 'projs/pacman',
-        publishedAt: 1448693940000,
-        labels: ['Matrixes', 'keyboard events']
+        url: 'https://ireneduchovny.github.io/pacman-game/',
+        publishedAt: 1668970709000,
+        labels: ['Matrixes', 'keyboard events', 'Pictures']
     },
 
     {
         id: "in-picture",
         name: 'In Picture',
-        title: 'In Picture',
-        desc: 'A game of finding the hidden picture',
-        url: 'projs/in-picture',
-        publishedAt: 1448693940000,
-        labels: ['Matrixes', 'keyboard events']
+        title: 'In Picture Game',
+        desc: 'A game of finding whats hidden in the picture',
+        url: 'https://ireneduchovny.github.io/whats-in-the-picture/',
+        publishedAt: 1668970709000,
+        labels: ['Arrays', 'Mouse events']
     },
 
     {
         id: "book-shop",
         name: 'Book Shop',
-        title: 'Book Shop',
+        title: 'Book Shop System',
         desc: 'A book shop',
-        url: 'projs/book-shop',
-        publishedAt: 1448693940000, 
-        labels: ['Matrixes', 'keyboard events']
+        url: 'https://ireneduchovny.github.io/book-workshop-projects/',
+        publishedAt: 1670266709000, 
+        labels: ['MVC', 'Storage Services', 'CRUDL']
     },
 
     {
         id: "touch-nums",
         name: 'Touch Nums',
-        title: 'Touch Nums',
-        desc: 'A game of finding the hidden picture',
-        url: 'projs/touch-nums',
-        publishedAt: 1448693940000,
+        title: 'Touch Nums Game',
+        desc: 'A game of pressing the numbers in order',
+        url: 'https://ireneduchovny.github.io/touch-nums-race-game/',
+        publishedAt: 1668970709000,
         labels: ['Matrixes', 'keyboard events']
     },
 
     {
         id: "ball-board",
         name: 'Ball Board',
-        title: 'Ball Board',
-        desc: 'A game of finding the hidden picture',
-        url: 'projs/ball-board',
-        publishedAt: 1448693940000,
+        title: 'Ball Board Game',
+        desc: 'A game of catching the balls',
+        url: 'https://ireneduchovny.github.io/Ball-catcher/',
+        publishedAt: 1668970709000,
         labels: ['Matrixes', 'keyboard events']
     },
 
     {
         id: "guess-me",
         name: 'Guess Me',
-        title: 'Guess Me',
-        desc: 'A game of finding the hidden picture',
-        url: 'projs/guess-me',
-        publishedAt: 1448693940000,
-        labels: ['Matrixes', 'keyboard events']
+        title: 'Guess Me Website',
+        desc: 'A game of a ginnie guessing who you think of and learning from you',
+        url: 'https://ireneduchovny.github.io/guess-who-game/',
+        publishedAt: 1670266709000,
+        labels: ['MVC', 'Storage Services', 'JSON trees', 'CRUDL']
     },
 ]
 

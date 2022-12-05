@@ -6,7 +6,7 @@ p {
     line-height: 1.75;
 }
 a {
-    color: #fed136;
+    color: peru;
 }
 a.active,
 a:active,
@@ -46,11 +46,11 @@ section h3.section-subheading {
     }
 }
 ::-moz-selection {
-    background: #fed136;
+    background: #d6a2e4;
     text-shadow: none;
 }
 ::selection {
-    background: #fed136;
+    background: #d6a2e4;
     text-shadow: none;
 }
 img::selection {
@@ -69,7 +69,7 @@ body {
     right: 3%;
     height: 50px;
     width: 50px;
-    background: #e2cb36;
+    background: #d6a2e4;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -84,7 +84,7 @@ body {
 .offcanvas-aside {
     position: fixed;
     height: 100%;
-    background: red;
+    background: #a4a2a7;
     width: 80vw;
     right: -80vw;
     z-index: 10;
@@ -97,8 +97,13 @@ body {
 .offcanvas-aside img {
     border-radius: 50%;
 }
+
+.offcanvas-aside h2 {
+    color: white;
+}
 .offcanvas-aside p {
     text-align: center;
+
 }
 .offcanvas-aside .offcanvas-content-suffix {
     height: 20%;
@@ -134,7 +139,7 @@ body {
     text-transform: uppercase;
 }
 #mainNav .navbar-brand {
-    color: #fed136;
+    color: #d6a2e4;
     font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 #mainNav .navbar-brand.active,
@@ -154,7 +159,7 @@ body {
 }
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #fed136;
+    color: #d6a2e4;
 }
 @media (min-width: 992px) {
     
@@ -190,7 +195,8 @@ body {
 header.masthead {
     text-align: center;
     color: white;
-    background-image: url("../img/header-bg.jpg");
+    background-image: url("../img/irene-header-bg.jpg");
+    /* filter: brightness(70%); */
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -247,6 +253,10 @@ header.masthead .intro-text .intro-heading {
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
+
+}
+.portfolio-img {
+    aspect-ratio: 8/8;
 }
 #portfolio .portfolio-item .portfolio-link {
     position: relative;
@@ -263,7 +273,7 @@ header.masthead .intro-text .intro-heading {
     -moz-transition: all ease 0.5s;
     transition: all ease 0.5s;
     opacity: 0;
-    background: rgba(254, 209, 54, 0.9);
+    background: #d6a2e4;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
     opacity: 1;
@@ -623,7 +633,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:active,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:hover {
-    background-color: #fed136;
+    background-color: #d6a2e4;
 }
 .flex-align-center {
     display: flex;
@@ -631,15 +641,23 @@ ul.social-buttons li a:hover {
     align-items: center;
 }
 .text-primary {
-    color: #fed136 !important;
+    color: #d6a2e4 !important;
+}
+.form-label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: darkslategray;
+    text-transform: uppercase;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .btn-primary {
     font-weight: 700;
     color: white;
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: #d6a2e4;
+    background-color: #d6a2e4;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
+    border: #222222 1px solid;
 }
 .btn-primary.focus,
 .btn-primary:focus {
@@ -699,8 +717,8 @@ fieldset[disabled] .btn-primary:hover {
     padding: 20px 40px;
     border-radius: 3px;
     color: white;
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: #d6a2e4;
+    background-color: #d6a2e4;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }

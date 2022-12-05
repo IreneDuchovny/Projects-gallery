@@ -18,7 +18,7 @@ function renderGallery() {
               <i class="fa fa-plus fa-3x"></i>
             </div>
           </div>
-          <img class="img-fluid" src="img/portfolio/${project.id}.png" alt="">
+          <img  class="portfolio-img img-fluid" src="img/portfolio/${project.id}.jpg" alt="">
         </a>
         <div class="portfolio-caption">
           <h4>${project.name}</h4>
@@ -32,6 +32,7 @@ function renderGallery() {
 
 function addEventListeners() {
   $('.portfolio-link').click(onShowModal)
+  $('.btn-submit').click(onSubmitForm)
 }
 
 function onShowModal() {
@@ -40,25 +41,14 @@ function onShowModal() {
   const project = getProjectById(projectId)
 
   var strHtmls = `
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl"></div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
+  
             <div class="modal-body">
-              <!-- Project Details Go Here -->
               <h2>${project.name}</h2>
               <p class="item-intro text-muted">${project.title}</p>
-              <img class="img-fluid d-block mx-auto" src="img/portfolio/${project.id}.png" alt="">
+              <img class="img-fluid d-block mx-auto" src="img/portfolio/${project.id}.jpg" alt="">
               <p>${project.desc}</p>
               <ul class="list-inline">
-                <li>Date: ${project.publishedAt}</li>
+                <li>Upload date: ${parseDate(project.publishedAt)}</li>
                 <li><a href="${project.url}" target="_blank">Demo Github</a></li>
                 <li>Category: ${project.labels.join(' , ')}</li>
               </ul>
@@ -66,11 +56,42 @@ function onShowModal() {
                   <i class="fa fa-times"></i>
                   Close Project</button>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>`
-  $('.modals').html(strHtmls)
+         `
+  $('.modal-body').html(strHtmls)
+}
+
+
+
+function onSubmitForm(ev) {
+  ev.preventDefault()
+  var $name = $('.form-container #inputFullname').val()
+  var $email = $('.form-container #inputEmail').val()
+  var $subject = $('.form-container  #inputSubject').val()
+  var $message = $('.form-container  #inputMessage').val()
+  // regex to validate email
+  var emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
+  console.log( $name, $email, $subject, $message)
+  if (!$name || !$email || !$subject || !$message ) {
+    alert('Please fill all the fields')
+    return
+  }
+
+  if (!emailRegex.test($email)) {
+    alert('Please enter a valid email address')
+    return
+  }
+
+  window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=ibalakin@gmail.com&su=${$subject}&body=${$message}`)
+  $('#inputFullname').val('')
+  $('#inputEmail').val('')
+  $('#inputSubject').val('')
+  $('#inputMessage').val('')
+  openCanvas()
+}
+
+function parseDate(timestamp) {
+  var date = new Date(timestamp)
+  // Return format Mon Year
+  return `${date.toLocaleString('en-us', { month: 'short' })} ${date.getFullYear()}`
+  
 }
