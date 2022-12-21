@@ -2,6 +2,15 @@
 
 var gProjects = [
     {
+        id: "memegenerator",
+        name: 'Meme Generator',
+        title: 'Minesweeper Game',
+        desc: 'A cool meme editor and generator',
+        url: 'https://ireneduchovny.github.io/Meme-generator/',
+        publishedAt: 1668970809000,
+        labels: ['MVC', 'CSS', 'Canvas']
+    },
+    {
         id: "minesweeper",
         name: 'Minesweeper',
         title: 'Minesweeper Game',
