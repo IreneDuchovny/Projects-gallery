@@ -47,7 +47,7 @@ function onShowModal() {
               <p>${project.desc}</p>
               <ul class="list-inline">
                 <li>Upload date: ${parseDate(project.publishedAt)}</li>
-                <li><a href="${project.url}" target="_blank">Demo Github</a></li>
+                <li><a href="${project.url}" target="_blank">Demo</a></li>
                 <li>Category: ${project.labels.join(' , ')}</li>
               </ul>
               <button class="btn btn-primary" data-dismiss="modal" type="button">
