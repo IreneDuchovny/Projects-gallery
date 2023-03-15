@@ -52,7 +52,7 @@ function onShowModal() {
               </ul>
               <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fa fa-times"></i>
-                  Close Project</button>
+                  Close </button>
             </div>
          `
   $('.modal-body').html(strHtmls)
