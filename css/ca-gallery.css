@@ -42,7 +42,7 @@ section h3.section-subheading {
 }
 @media (min-width: 768px) {
     section {
-        padding: 150px 0;
+        /* padding: 150px 0; */
     }
 }
 ::-moz-selection {
@@ -138,8 +138,11 @@ body {
     text-transform: uppercase;
 }
 #mainNav .navbar-brand {
-    color: #d6a2e4;
+    /* color: #d6a2e4; */
+    color: #94b4b2;
     font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+    /* -webkit-text-stroke: 0.5px #52505e; */
+/* text-stroke: 1px black; */
 }
 #mainNav .navbar-brand.active,
 #mainNav .navbar-brand:active,
@@ -149,16 +152,20 @@ body {
 }
 #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 90%;
-    font-weight: 400;
+    font-weight: 500;
     padding: 0.75em 0;
     letter-spacing: 1px;
-    color: white;
+   
+    color: #ecab9e;
+    
+    /* color: white; */
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #d6a2e4;
+    color: #94b4b2;
+    /* color: #d6a2e4; */
 }
 @media (min-width: 992px) {
     
@@ -193,8 +200,10 @@ body {
 }
 header.masthead {
     text-align: center;
-    color: white;
-    background-image: url("../img/irene-header-bg.jpg");
+    /* color: white; */
+    color: #52505e;
+    /* background-image: url("../img/irene-header-bg.jpg"); */
+    background-image: url("../img/portfolioBG.png");
     /* filter: brightness(70%); */
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -225,7 +234,7 @@ header.masthead .intro-text .intro-heading {
 }
 @media (min-width: 768px) {
     header.masthead .intro-text {
-        padding-top: 300px;
+        padding-top: 200px;
         padding-bottom: 200px;
     }
     header.masthead .intro-text .intro-lead-in {
@@ -236,7 +245,7 @@ header.masthead .intro-text .intro-heading {
         font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
     header.masthead .intro-text .intro-heading {
-        font-size: 75px;
+        font-size: 65px;
         font-weight: 700;
         line-height: 75px;
         margin-bottom: 50px;
@@ -592,6 +601,8 @@ header.masthead .intro-text .intro-heading {
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
+  
+   
 }
 footer {
     padding: 25px 0;
@@ -716,21 +727,27 @@ fieldset[disabled] .btn-primary:hover {
     padding: 20px 40px;
     border-radius: 3px;
     color: white;
-    border-color: #d6a2e4;
-    background-color: #d6a2e4;
+    /* border-color: #d6a2e4; */
+    border-color: #ecab9e;
+    /* background-color: #d6a2e4; */
+    background-color: #ecab9e;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
 .btn-xl.focus,
 .btn-xl:focus {
     color: white;
-    border-color: #b48b01;
-    background-color: #fec503;
+    border-color: #94b4b2;
+    background-color:#94b4b2;
+    /* border-color: #b48b01;
+    background-color: #fec503; */
 }
 .btn-xl:hover {
     color: white;
-    border-color: #f6bf01;
-    background-color: #fec503;
+    border-color: #94b4b2;
+    background-color: #94b4b2;
+    /* border-color: #f6bf01;
+    background-color: #fec503; */
 }
 .btn-xl.active,
 .btn-xl:active,
